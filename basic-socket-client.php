@@ -5,22 +5,8 @@
  * A test of php socket client
  */
 
-$msg = "<?xml version=\"1.0\"?>
-<Send>
-    <Request>
-        <ID>1</ID>
-        <OriginTime>2012-01-30T09:00:00-0800</OriginTime>
-    </Request>
-    <Alert>
-        <Agency ID=\"1\">
-            <Station ID=\"rsv1\">
-                <Type>WSA</Type>
-            </Station>
-        </Agency>
-    </Alert>
-</Send>
-";
-$host = "192.168.60.149";
+$msg = "Hello World";
+$host = "127.0.0.1";
 $port = 50502;
 $socket = socket_create(AF_INET, SOCK_STREAM, 0);
 assert($socket);
