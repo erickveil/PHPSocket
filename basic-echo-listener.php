@@ -3,9 +3,8 @@
  * Erick Veil
  * Date: 6/5/17
  *
- * Runs a fake NIM that always responds as idle.
- * Outputs hex of any bytes sent to it to the command line.
- * Only properly responds to status requests
+ * Runs an echo server.
+ * Outputs any bytes sent to it to stdout
  */
 
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
